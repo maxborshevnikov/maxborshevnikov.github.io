@@ -1,0 +1,12 @@
+# / was on /dev/nvme0n1p5 during installation
+/dev/nvme0n1p5  /               ext3    noatime                 0 1
+# /boot/efi was on /dev/nvme0n1p1 during installation
+/dev/nvme0n1p1  /boot/efi       vfat    noatime                 0 0
+
+/dev/nvme0n1p6  /mnt/data       ext3    noatime,user,exec,rw    0 2
+
+/dev/nvme0n1p3  /mnt/windows    ntfs    noatime,umask=0,rw,exec 0 3
+/dev/nvme0n1p4  /mnt/windata    ntfs    noatime,umask=0,rw,exec 0 4
+
+proc            /proc           proc    defaults                0 0
+shm             /dev/shm        tmpfs   nodev,nosuid,noexec     0 0

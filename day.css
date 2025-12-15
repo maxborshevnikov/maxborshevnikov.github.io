@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+div.citate {background-color:#feffbc;}
+div.file {background-color:#e6f4e9;
+white-space: pre;
+overflow-x: auto;
+padding: 5px;
+border: 1px solid gray;
+border-radius: 4px;}
+span.red_root {color:red;}
+span.pink {color: pink;}
+.black_bg {background-color:#3d3846;
+			color:#f6f5f4;
+			padding: 5px;
+    border: 1px solid #57e389;
+    border-radius: 4px;}
+img.wide {width: 100%;
+			max-width: 100%;
+			height: auto;
+			display: block;}
+
+
+.code-scroll {
+    white-space: pre;      /* Preserves whitespace and prevents lines from wrapping */
+    overflow-x: auto;      /* Adds a horizontal scroll bar only when needed */
+    word-wrap: normal;     /* Ensures normal word wrapping rules apply within the non-wrapping context */
+    /* Optional styling below */
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
