@@ -32,317 +32,298 @@
 			🇷🇺
 		</a>
 	</span></header>
-<h1>Установка Gentoo Linux на ноутбук DEXP Atlas A15-I3W400.</h1>
+<h1>Installing Gentoo Linux on a DEXP Atlas A15-I3W400 laptop.</h1>
 <img alt="Front view" src="./pics/2.jpg" class="wide">
 <img alt="Quarter view" src="./pics/3.jpg" class="wide">
 <img alt="Side view" src="./pics/6.jpg" class="wide">
 
-<h2>Введение.</h2>
+<h2>Introduction.</h2>
 
-<p>Ноутбук был куплен в магазине ДНС—Владивосток (26000 руб ≈ 325 USD) на замену отслужившему 13 лет ноутбуку DNS Office
-    15,6“ (Core i3, 2048 МБ, 320 ГБ). За 13 лет предыдущий ноутбук был до максимума дополнен оперативкой до 8 ГБ и
-    жесткий диск заменён на 2 ТБ. Поэтому для нового ноутбука была докуплена планка памяти на 16 ГБ, в итоге получилось
-    24 ГБ. Также SSD накопитель был заменён на SSD NVMe 2 ТБ. С учётом всего цена получилась 44000 рублей ≈ 550 USD.</p>
+<p>The laptop was purchased at DNS-Vladivostok (26,000 rubles, ≈ 325 USD) to replace a 13-year-old DNS Office 15.6" laptop (Core i3, 2048 MB, 320 GB). Over the past 13 years, the previous laptop had been improved with 8 GB of RAM in total and the hard drive had been upgraded to a 2 TB one. Therefore, an additional 16 GB memory module was purchased for the new laptop, bringing the total to 24 GB. The SSD drive was also upgraded to a 2 TB NVMe SSD. All in all, the price became to 44,000 rubles, ≈ 550 USD.</p>
 <div class="citate">
-<details><summary>Исходные характеристики ноутбука с сайта ДНС:</summary>
-    <pre><code>Заводские данные
-Гарантия продавца
-12 мес.
-Срок эксплуатации
-24 мес.
-Страна-производитель
-Китай
-Классификация
-Тип
-ноутбук
-Модель
+<details><summary>Original laptop specifications from the DNS website:</summary>
+    <pre><code>Manufacturer's data
+Seller's warranty
+12 months
+Service life
+24 months
+Country of Origin
+China
+Classification
+Type
+Laptop
+Model
 DEXP Atlas A15-I3W400
-Линейка
+Line
 DEXP Atlas
-Код производителя
+Manufacturer Code
 [A15-I3W400]
-Год релиза
+Release Year
 2025
-Игровой ноутбук
-нет
-Операционная система
-Операционная система
+Gaming Laptop
+No
+Operating System
+Operating System
 Windows 11 Home
-Внешний вид
-Конструктивное исполнение
-классический
-Цвет верхней крышки
-серебристый
-Цвет, заявленный производителем
+Appearance
+Design
+Classic
+Top Lid Color
 Silver
-Материал крышки
-алюминий
-Материал корпуса
-пластик
-Раскрытие крышки
-стандартное
-Устройства ввода
-Раскладка клавиатуры
-английская/русская
-Цифровой блок клавиатуры
-есть
-Подсветка клавиш
-одноцветная (белая)
-Тачпад
-стандартный тачпад
-Сканер отпечатка пальца
-есть
-Механическая клавиатура
-нет
-Влагозащищенная клавиатура
-нет
-Экран
-Тип экрана
+Manufacturer's Declared Color
+Silver
+Lid Material
+Aluminum
+Body Material
+Plastic
+Lid Opening
+Standard
+Input Devices
+Keyboard Layout
+English/Russian
+Numeric Keypad
+Yes
+Key Backlight
+Single-Color (White)
+Touchpad
+Standard Touchpad
+Fingerprint Scanner
+Yes
+Mechanical Keyboard
+No
+Spill-Resistant Keyboard
+No
+Screen
+Type Screen
 IPS
-Диагональ экрана (дюйм)
-15.6&quot;
-Разрешение экрана
+Screen diagonal (inches)
+15.6"
+Screen Resolution
 1920x1080
-Покрытие экрана
-матовое
-Сенсорный экран
-нет
-Максимальная частота обновления экрана
-60 Гц
-Яркость
-300 Кд/м²
-Плотность пикселей
+Screen Finish
+Matte
+Touch Screen
+No
+Maximum Refresh Rate
+60 Hz
+Brightness
+300 cd/m²
+Pixel Density
 141 ppi
-Технология динамического обновления экрана
-нет
-Цветовой охват
+Dynamic Screen Refresh Technology
+No
+Color Gamut
 45% NTSC
 HDR
-нет
-Дополнительный дисплей
-нет
-Процессор
-Модель процессора
+No
+Secondary Display
+No
+Processor
+Processor Model
 Intel Core i3-1215U
-Общее количество ядер
+Total Number of Cores
 6
-Количество производительных ядер
+Number of Performance Cores
 2
-Количество энергоэффективных ядер
+Number of Power-Efficient Cores
 4
-Количество малых энергоэффективных ядер
+Number of Small Power-Efficient Cores
 0
-Максимальное число потоков
+Maximum Number of Threads
 8
-Базовая частота производительных ядер
-1.2 ГГц
-Максимальная частота производительных ядер
-4.4 ГГц
-Базовая частота энергоэффективных ядер
-0.9 ГГц
-Максимальная частота энергоэффективных ядер
-3.3 ГГц
-Базовое тепловыделение
-15 Вт
-Поколение процессоров
-Intel 12-е поколение
-Техпроцесс
+Base Frequency of Performance Cores
+1.2 GHz
+Maximum Frequency of Performance Cores
+4.4 GHz
+Base Frequency of Power-Efficient Cores
+0.9 GHz
+Maximum Frequency of Power-Efficient Cores
+3.3 GHz
+Base TDP
+15 W
+Processor Generation
+Intel 12th Generation
+Technology
 Intel 7
-Нейронный процессор
-есть
-Оперативная память
-Тип оперативной памяти
+Neural Processor
+yes
+RAM
+RAM Type
 DDR4
-Объем оперативной памяти
-8 ГБ
-Количество слотов под модули памяти
+RAM Capacity
+8 GB
+Number of Memory Slots
 2
-Частота оперативной памяти
-3200 МГц
-Максимальный объем памяти
-64 ГБ
-Свободные слоты для оперативной памяти
+RAM Frequency
+3200 MHz
+Maximum Memory
+64 GB
+Available RAM Slots
 1
-Графический ускоритель
-Вид графического ускорителя
-встроенный
-Модель встроенной видеокарты
+Graphics Accelerator
+Graphics Accelerator Type
+Integrated
+Integrated Graphics Card Model
 Intel UHD Graphics
-Модель дискретной видеокарты
-нет
-Накопители данных
-Общий объем твердотельных накопителей (SSD)
-256 ГБ
-Тип SSD диска
+Discrete Graphics Card Model
+no
+Storage
+Total Solid-State Drive (SSD) Capacity
+256 GB
+SSD Drive Type
 M.2 PCIe
-Объем интегрированной памяти
-0 ГБ
-Свободные слоты для накопителей
+Integrated Memory Capacity
+0 GB
+Available Storage Slots
 M.2 SATA
-Веб-камера
-Веб-камера
-2 Мп (1080p)
-Распознавание лица
-нет
-Шторка веб-камеры
-нет
-Встроенное дополнительное оборудование
-Встроенные динамики
-есть
-Мощность динамиков
-2 x 2 Вт
-Встроенный микрофон
-есть
-Количество микрофонов
-1 шт
-Поддержка карт памяти кард-ридером
+Webcam
+Webcam
+2 MP (1080p)
+Face Recognition
+no
+Webcam Shutter
+no
+Integrated Accessories
+Integrated Speakers
+yes
+Speaker Power
+2 x 2 W
+Built-in Microphone
+yes
+Number of Microphones
+1 pc
+Memory Card Reader
 microSD
-Датчики
-нет
-Интернет/передача данных
-Беспроводной интерфейс
-Bluetooth 5.0, WI-FI 5 (802.11ac)
-Порт Ethernet
-LAN 1 Гбит/с
-Разъемы периферии
-Видеоразъемы
+Sensors
+no
+Internet/Data Transfer
+Wireless Interface
+Bluetooth 5.0, Wi-Fi 5 (802.11ac)
+Ethernet Port
+LAN 1 Gbps
+Peripheral Ports
+Video Ports
 HDMI, USB Type-C
-Версия видеоразъема
+Video Port Version
 HDMI 1.4
-Аудиоразъемы
-3.5 мм jack (микрофон/аудио)
-Разъемы USB Type-A
+Audio Ports
+3.5 mm jack (microphone/audio)
+USB Type-A Ports
 USB 2.0, USB 3.2 Gen1
-Разъемы USB Type-C
-2 х USB 3.2 Gen1
+USB Type-C Ports
+2 x USB 3.2 Gen1
 Thunderbolt
-нет
-Питание
-Поддержка USB Power Delivery
-есть
-Тип аккумулятора
+no
+Power
+USB Power Delivery Support
+yes
+Battery Type
 Li-Pol
-Емкость аккумулятора
-55 Вт*ч
-Емкость аккумулятора
-4825 мА*ч
-Приблизительное время автономной работы
-8 ч
-Выходная мощность адаптера питания
-45 Вт
-Дополнительная информация
-Дополнительно
-Camera lock, замок Kensington
-Комплектация
-адаптер питания, документация
-Габариты и вес
-Ширина
-360.8 мм
-Глубина
-235.3 мм
-Толщина
-18.1 мм
-Вес
-1.91 кг</code></pre>
+Capacity Battery
+55 Wh
+Battery Capacity
+4825 mAh
+Approximate Battery Life
+8 h
+Power Adapter Output
+45 W
+Additional Information
+Additional
+Camera Lock, Kensington Lock
+Package Included
+Power Adapter, Documentation
+Dimensions and Weight
+Width
+360.8 mm
+Depth
+235.3 mm
+Thickness
+18.1 mm
+Weight
+1.91 kg</code></pre>
 </details></div>
-<p>На предыдущем ноутбуке после покупки использовал Gentoo Linux, затем перешел на Calculate Linux. После покупки нового
-    ноутбука решил также поставить на него Calculate Linux, но после установки не заработала звуковая карта и система
-    X11 — настройка графики не сработала. Причем проблемы с графикой присутствуют и при загрузке с LiveDVD. Может потом
-    разберусь и с установкой Calculate Linux, но пока решил вернуться на Gentoo Linux — благо система управления
-    пакетами и сборки — portage в обоих дистрибутивах одинаковая 😁.</p>
+<p>I used Gentoo Linux on my previous laptop after purchasing it, then switched to Calculate Linux. After purchasing a new laptop, I decided to install Calculate Linux on it as well, but after installation, the sound card and X11 didn't work—the graphics settings was not autodetected. The graphics issues also persist when booting from the Live DVD. Maybe I'll write how to install Calculate Linux later, but for now I've decided to return to Gentoo Linux—thankfully, the package management and build system, Portage, is the same on both distributions😁.</p>
 <h2>Подготовка к установке.</h2>
-<p>Сначала ставлю Windows 11 для программ отсутствующих в Linux, а также для игр. Систему Secure Boot я отключаю —
-    лишние сложности при установке, а смысла в ней я особо не вижу. При установке создали раздел EFI (FAT32 100 МБ),
-    Microsoft reserved partitition (16 МБ), раздел под систему Windows (NTFS 250 ГБ) и раздел под данные Windows (NTFS
-    320 ГБ). Эти разделы создал с установочной флешки Windows. Остальную разметку будем делать уже с установочной флешки
-    Gentoo Linux.</p>
-<p>Установка Windows проходит без осложнений. После установки ставим драйвера выложенные на сайте <a href="https://drv.dns-shop.ru/1.%20drivers/1.%20drivers/Noutbook/9111265%2C9111266%20/9111265%2C9111266.zip">ДНС</a>. Все работает.</p>
-<p>Далее качаем образ диска <a href="https://www.gentoo.org/downloads/">LiveGUI
-    USB Image</a> для архитектуры AMD64 и сразу качаем Stage3 архив для профиля desktop
-    profile | openrc.</p>
-<p>Для подготовки загрузочной USB флешки в Linux используем команду:</p>
-<div class="black_bg"><code>dd if=полный_путь_до_файла_iso of=путь_до_устройства_USB bs=4096 status=progress &amp;&amp; sync</code></div>
-<p>Для подготовки загрузочной USB флешки в Windows можно использовать программы <a href="https://rufus.ie/ru/">Rufus</a> или <a href="https://www.ventoy.net/en/download.html">Ventoy</a>.</p>
-<h2>Загрузка с LiveGUI USB и подготовка диска и сети.</h2>
-<p>Для загрузки с USB носителя после нажатия на кнопку питания удерживаем кнопку Esc или Del для входа в BIOS. Далее в
-    BIOS выбираем вкладку Save&amp;Exit и в разделе Boot Override выбираем нужный носитель. Нажали Enter и пошла
-    загрузка с LiveGUI USB.</p>
-<p>Ремарка: для установки желательно использовать внешнюю мышку, так как в версиях ядра включительно 6.17.7 тачпад после
-    загрузки отключается через некоторое время. В дальнейшем для работы будет установлен дополнительный модуль ядра
-    устраняющий данный недостаток. В дальнейшем возможно ядро исправят и дополнительный модуль не потребуется.</p>
-<p>В качестве рабочего окружения используется KDE, поэтому проблем с работой быть не должно. Настройка WiFi сети через
-    апплет NetworkManager в панели задач первоначально не прошла — подключение зависает в процессе авторизации.
-    Настраиваем вручную тип защиты Wi-Fi — WPA/WPA2 Personal. Также указываем сохранение пароля для всех пользователей
-    (без шифрования). После перезагрузки настраивать сеть будем заново.</p>
-<p>Необходимо настроить точное время на системе, так как при синхронизации репозитория время должно совпадать. Время
-    указываем в UTC (MM — месяц, DD — день, hh — час, mm — минуты, YYYY — год).</p>
+<p>First, I'm installing Windows 11 for programs that aren't available on Linux, as well as for games. I'm disabling Secure Boot—it adds unnecessary complexity during installation, and I don't really see any advantages for me. During installation, I created an EFI partition (FAT32 100 MB), Microsoft Reserved Partition (16 MB), a Windows system partition (NTFS 250 GB), and a Windows data partition (NTFS 320 GB). I created these partitions from the Windows installation flash drive. We'll do the rest of the partitioning from the Gentoo Linux installation flash drive.</p>
+<p>Windows installation went smoothly. After installation, we installed the drivers posted on the <a href="https://drv.dns-shop.ru/1.%20drivers/1.%20drivers/Noutbook/9111265%2C9111266%20/9111265%2C9111266.zip">DNS</a> website. Everything worked fine.</p>
+<p>Next, download the <a href="https://www.gentoo.org/downloads/">LiveGUI USB Image</a> disk image for the AMD64 architecture and immediately download the Stage3 archive for the desktop profile | openrc profile. </p>
+<p>To prepare a bootable USB flash drive in Linux, use the command:</p>
+<div class="black_bg"><code>dd if=full_path_to_iso_file of=full_path_to_USB_flash_drive bs=4096 status=progress &amp;&amp; sync</code></div>
+<p>To prepare a bootable USB flash drive in Windows, you can use <a href="https://rufus.ie/ru/">Rufus</a> or <a href="https://www.ventoy.net/en/download.html">Ventoy</a>.</p>
+<h2>Boot from LiveGUI USB and prepare disk and network.</h2>
+<p>To boot from a USB drive, after pressing the power button, hold down the Esc or Del key to enter the BIOS. Then, in the BIOS, select the Save &amp; Exit tab and select the desired drive in the Boot Override section. Press Enter, and the LiveGUI USB will boot.</p>
+<p>Note: It's recommended to use an external mouse for installation, as kernel versions including 6.17.7 disable the touchpad after a short period from booting. A kernel module will be installed to fix this issue. It's possible that the kernel will be patched in the future, making the module unnecessary.</p>
+<p>KDE is used as the desktop environment of LiveUSB, so there shouldn't be any dificulties during work. Initially, setting up a WiFi network via the NetworkManager applet in the taskbar didn't work — the connection hung during the authorization process. We manually configured the WiFi security type to WPA/WPA2 Personal. We also specified that passwords should be saved for all users (no encryption). After reboot, we'll have to set up the network again.</p>
+<p>It's important to set the correct system time, as the time must match when synchronizing the repository. Time is specified in UTC (MM = month, DD = day, hh = hour, mm = minutes, YYYY = year).</p>
 <div class="black_bg"><code><span class="red_root">root #</span> date MMDDhhmmYYYY</code></div>
-<p>Разметку незанятой части диска производим с помощью программы KDE Partitition Manager или GParted. Я разбил
-    оставшуюся часть диска пополам — один раздел корневой, а другой под общие данные. Рекомендуемое монтирование
-    отдельных папок по разным разделам я не использую — ноутбуком пользуюсь я один. В качестве файловой системы
-    использую ext3, хотя можно и любую другую из рекомендованных (XFS, ext4, btrfs или ZFS). Раздел под swap я не делал
-    так как оперативную память расширил до 24 ГБ.</p>
-<p>В результате получил следующую разбивку NVMe диска:</p>
+<p>We partition the unallocated portion of the disk using KDE Partitition Manager or GParted. I split the remaining disk in half—one partition for the root drive and one for shared data. I don't use the recommended method of mounting individual folders on separate partitions—I'm the only one using the laptop. I use ext3 as the file system, although any other recommended file system (XFS, ext4, btrfs, or ZFS) will work. I didn't create a swap partition because I expanded the RAM to 24 GB.</p>
+<p>As a result, I received the following NVMe disk partititions:</p>
 <div class="black_bg"><pre><code><span class="red_root">root #</span> fdisk /dev/nvme0n1
 
+Welcome to fdisk (util-linux 2.41.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+This disk is currently in use - repartitioning is probably a bad idea.
+It's recommended to umount all file systems, and swapoff all swap
+partitions on this disk.
 
 
-Команда (m для справки): p
+Command (m for help): p
 
-Диск /dev/nvme0n1: 1,86 TiB, 2048408248320 байт, 4000797360 секторов
-Disk model: ADATA LEGEND 700
-Единицы: секторов по 1 * 512 = 512 байт
-Размер сектора (логический/физический): 512 байт / 512 байт
-Размер I/O (минимальный/оптимальный): 512 байт / 512 байт
-Тип метки диска: gpt
-Идентификатор диска: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+Disk /dev/nvme0n1: 1,86 TiB, 2048408248320 bytes, 4000797360 sectors
+Disk model: ADATA LEGEND 700                        
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 
-Устр-во         начало      Конец       Секторы     Размер  Тип
-/dev/nvme0n1p1  2048        206847      204800      100M    EFI
-/dev/nvme0n1p2  206848      239615      32768       6M      Зарезервированный раздел Microsoft
-/dev/nvme0n1p3  239616      523294719   523055104   249,4G  Microsoft basic data
-/dev/nvme0n1p4  523294720   1201180671  677885952   323,2G  Microsoft basic data
-/dev/nvme0n1p5  1201180672  2593820671  1392640000  664,1G  Файловая система Linux
-/dev/nvme0n1p6  2593820672  4000796671  1406976000  670,9G  Файловая система Linux
+Device              Start        End    Sectors   Size Type
+/dev/nvme0n1p1       2048     206847     204800   100M EFI System
+/dev/nvme0n1p2     206848     239615      32768    16M Microsoft reserved
+/dev/nvme0n1p3     239616  523294719  523055104 249,4G Microsoft basic data
+/dev/nvme0n1p4  523294720 1201180671  677885952 323,2G Microsoft basic data
+/dev/nvme0n1p5 1201180672 2593820671 1392640000 664,1G Linux filesystem
+/dev/nvme0n1p6 2593820672 4000796671 1406976000 670,9G Linux filesystem
 
-Команда (m для справки): q</code></pre></div>
+Command (m for help): q</code></pre></div>
 
-<p>Для дальнейшей установки будем использовать раздел /dev/nvme0n1p5. Создаём точку монтирования для нашего раздела:</p>
+<p>For further installation, we'll use the /dev/nvme0n1p5 partition. Let's create a mount point for our partition:</p>
 
 <div class="black_bg"><code><span class="red_root">root #</span> mkdir --parents /mnt/gentoo</code></div>
 
-<p>Монтируем наш раздел к точке монтирования:</p>
+<p>We mount our partition to the mount point:</p>
 <div class="black_bg"><code><span class="red_root">root #</span> mount /dev/nvme0n1p5 /mnt/gentoo</code></div>
 
-<h2>Подготовка раздела к установке системы.</h2>
+<h2>Preparing the partition for system installation.</h2>
 
-<p>Скачиваем stage3 файл или находим файл скачанный ранее. Для скачивания:</p>
+<p>Download the stage3 file or find the previously downloaded file. To download:</p>
 
 <div class="black_bg"><code><span class="red_root">root #</span> links https://www.gentoo.org/downloads/mirrors/</code></div>
 
-<p>Далее необходимо распаковать этот файл на раздел предназначенный для установки. Для этого из папки куда мы скачали
-    stage3 файл запускаем команду:</p>
+<p>Next, you need to extract this file to the partition designated for installation. To do this, run the following command from the folder where you download the stage3 file:</p>
 
 <div class="black_bg"><code><span class="red_root">root #</span> tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner -C /mnt/gentoo</code></div>
 
-<p>После распаковки редактируем параметры сборки в файле make.conf:</p>
+<p>After unpacking, edit the build parameters in the make.conf file:</p>
 
 <div class="black_bg"><code><span class="red_root">root #</span> nano /mnt/gentoo/etc/portage/make.conf</code></div>
 
-<p>В моем случае make.conf выглядит как-то так.</p>
+<p>In my case, make.conf looks something like this.</p>
 
 <div class="file"><details><summary><a href="./files/make.conf">/etc/portage/make.conf</a></summary><br><br><pre><code># These settings were set by the catalyst build script that automatically
 # built this stage.
 # Please consult /usr/share/portage/config/make.conf.example for a more
 # detailed example.
-<span class="red_root"># Значение COMMON_FLAGS необходимо задать, иначе при сборке пакета gcc будет ошибка.</span>
+<span class="red_root"># Variable COMMON_FLAGS is needed determine. In other case compilation of package gcc will be interrupted with error.</span>
 <span class="red_root">COMMON_FLAGS=&quot;-O2 -pipe -march=alderlake -mabm -mno-kl -mno-pconfig -mno-sgx -mno-widekl -mshstk --param=l1-cache-line-size=64 --param=l1-cache-size=32 --param=l2-cache-size=10240&quot;</span>
 CFLAGS=&quot;${COMMON_FLAGS}&quot;
 CXXFLAGS=&quot;${COMMON_FLAGS}&quot;
 FCFLAGS=&quot;${COMMON_FLAGS}&quot;
 FFLAGS=&quot;${COMMON_FLAGS}&quot;
 MAKEOPTS=&quot;-j3&quot;
-<span class="red_root"># Флаг -getbinpkg означает, что пакеты будут собираться из исходников. Если есть желание воспользоваться уже собранными пакетами, то строку FEATURES нужно закомментировать знаком #.</span>
+<span class="red_root"># Flag -getbinpkg mean that packages will be compiled from source code. If you want use precompiled binary packages it needed comment line FEATURES with #.</span>
 <span class="red_root">FEATURES=&quot;${FEATURES} -getbinpkg&quot;</span>
 ACCEPT_LICENSE=&quot;*&quot;
 
@@ -360,30 +341,28 @@ LC_MESSAGES=C.UTF-8</code></pre>
 </details></div>
 
 
-<p>Далее для обновления и установки пакетов необходимо перенести на установочный раздел информацию о серверах доменных
-    имен (DNS):</p>
+<p>Next, to update and install packages, you need to transfer information about domain name servers (DNS) to the installation partition:</p>
 
 <div class="black_bg"><code><span class="red_root">root #</span> cp --dereference /etc/resolv.conf /mnt/gentoo/etc/</code>
 </div>
-<h2>Установка системы.</h2>
+<h2>Installing the system.</h2>
 
-<p>Все подготовительные шаги выполнены переходим в терминале в окружение chroot нашего раздела для установки
-    системы:</p>
+<p>All preparatory steps are complete – let's go to the chroot environment of our partition in the terminal to install the system:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> arch-chroot /mnt/gentoo</code>
 </div>
-<p>Выполняем подготовку для установки загрузчика grub:</p>
+<p>Let's prepare for installing the grub bootloader:</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> mkdir --parents /boot/efi
 <span class="red_root">root #</span> mount /dev/nvme0n1p1 /boot/efi</code></pre>
 </div>
 
-<p>Устанавливаем снимок репозитория portage на систему:</p>
+<p>Install a snapshot of the portage repository on the system:</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> emerge-webrsync
 <span class="red_root">root #</span> emerge --sync</code></pre>
 </div>
-<p>После завершения работы команд необходимо выбрать профиль системы:</p>
+<p>After completing the commands, you need to select a system profile:</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> eselect profile list
 Available profile symlink targets:
@@ -438,92 +417,87 @@ Available profile symlink targets:
   [49]  default/linux/amd64/23.0/split-usr/musl/hardened (exp)
   [50]  default/linux/amd64/23.0/split-usr/musl/hardened/selinux (exp)</code></pre>
 </div>
-<p>Я использую окружение Plasma(KDE) с системой инициализации OpenRC:</p>
+<p>I use the Plasma(KDE) environment with the OpenRC init system:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> eselect profiles set 7</code>
 </div>
-<p>Выбираем настройки локалей, которые необходимо установить:</p>
+<p>Select the locale settings you want to install:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> nano /etc/locale.gen</code>
 </div>
-<p>В открывшемся файле удаляем знак # в начале строки ru_RU.UTF-8 UTF-8. После сохранения и закрытия файла запускаем
-    команду:</p>
+<p>In the file that opens, delete the # sign at the beginning of the ru_RU.UTF-8 UTF-8 line. After saving and closing the file, run the command:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> locale-gen</code>
 </div>
-<p>Настраиваем выбор видеокарты:</p>
+<p>Configuring video card selection:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> touch /etc/portage/package.use/00video ; echo '*/* VIDEO_CARDS: -* intel' &gt; /etc/portage/package.use/00video</code>
 </div>
-<p>Далее обновляем установленные пакеты:</p>
+<p>Next, we update the installed packages:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> emerge -avuDU @world</code>
 </div>
-<p>Перед установкой команда выдаст список обновляемых пакетов с флагами USE. Просматриваем запланированные к установке
-    пакеты и при необходимости поправить флаги установки — отказываемся от установки. Внести изменения в флаги установки
-    можно либо в файле make.conf, либо напрямую при вводе команды:</p>
+<p>Before installation, the command will display a list of packages to be updated with their USE flags. Review the packages scheduled for installation and, if necessary, adjust the installation flags - cancel the installation. You can change the installation flags either in the make.conf file or directly when entering the command:</p>
 <div class="black_bg">
-<code><span class="red_root">root #</span> USE=&quot;флаг_для_установки_1 флаг_для_установки_2 .... -флаг_для отказа_1 -флаг_для отказа_2 ...&quot; emerge -avuDU @world</code>
+<code><span class="red_root">root #</span> USE=&quot;flag_to_install_1 flag_to_install_2 .... -flag_to_rejection_1 -flag_to_rejection_2 ...&quot; emerge -avuDU @world</code>
 </div>
-<p>Когда комбинация флагов нас устраивает соглашаемся на установку и ждем когда установка закончится (может занять
-    долгое время). Также флаги можно поменять потом после установки системы — пересобирая пакеты заново.</p>
+<p>Once we're satisfied with the flag combination, we agree to the installation and wait for it to complete (it may take a long time). You can also change the flags later after the system installation by rebuilding the packages.</p>
 
-<p>Также желательно сначала, перед запуском установки — скачать пакеты. Для этого запускаем команду:</p>
+<p>It's also a good idea to download the packages before starting the installation. To do this, run the command:</p>
 <div class="black_bg">
-<code><span class="red_root">root #</span> USE=&quot;флаг_для_установки_1 флаг_для_установки_2 .... -флаг_для отказа_1 -флаг_для отказа_2 ...&quot; emerge -fvuDU @world</code>
+<code><span class="red_root">root #</span> USE=&quot;flag_to_install_1 flag_to_install_2 .... -flag_to_rejection_1 -flag_to_rejection_2 ...&quot; emerge -fvuDU @world</code>
 </div>
-<p>А далее команда на установку.</p>
+<p>And then the installation command.</p>
 
-<h2>Сборка ядра системы.</h2>
+<h2>Building the system kernel.</h2>
 
-<p>Для начала необходимо установить требуемые пакеты.</p>
+<p>First, you need to install the required packages.</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> USE=&quot;grub initramfs split-ucode redistributable tools device-mapper fonts nls sdl themes truetype dracut mount&quot; emerge -av grub linux-firmware sof-firmware intel-microcode installkernel os-prober</code>
 </div>
-<p>Добавляем поиск других систем на диске при конфигурации grub:</p>
+<p>Adding a search for other systems on the disk when configuring grub:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> nano /etc/default/grub</code>
 </div>
-<p>Вставляем в файл строку следующего содержания:</p>
+<p>We insert the following line into the file:</p>
 <div class="file"><code>GRUB_DISABLE_OS_PROBER=false</code></div>
-<p>Сохраняем и выходим.</p>
+<p>Save and exit.</p>
 
-<p>Далее нужно установить ядро:</p>
+<p>Next you need to install the kernel:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> USE=&quot;experimental initramfs strip&quot; emerge -pvNU gentoo-kernel</code>
 </div>
-<p>Ждем завершения установки.</p>
+<p>We are waiting for the installation to complete.</p>
 
-<h2>Конфигурация системы.</h2>
+<h2>System configuration.</h2>
 
-<p>Для начала сконфигурируем подключение разделов жесткого диска после загрузки компьютера. Для этого редактируем файл
-    /etc/fstab, но сначала создаем точки монтирования в папке /mnt и смотрим названия разделов.</p>
+<p>First, let's configure how hard drive partitions are mounted after the computer boots. To do this, edit the /etc/fstab file, but first create mount points in the /mnt folder and check the partition names.</p>
 <div class="black_bg">
-<pre><code><span class="red_root">root #</span> mkdir /mnt/windows             #раздел системы Windows
-<span class="red_root">root #</span> mkdir /mnt/windata              #раздел данных Windows
-<span class="red_root">root #</span> mkdir /mnt/data                   #раздел данных Linux
+<pre><code><span class="red_root">root #</span> mkdir /mnt/windows             #system partition Windows
+<span class="red_root">root #</span> mkdir /mnt/windata                        #data partition Windows
+<span class="red_root">root #</span> mkdir /mnt/data                           #data partition Linux
 <span class="red_root">root #</span> fdisk -l /dev/nvme0n1
-Диск /dev/nvme0n1: 1,86 TiB, 2048408248320 байт, 4000797360 секторов
-Disk model: ADATA LEGEND 700
-Единицы: секторов по 1 * 512 = 512 байт
-Размер сектора (логический/физический): 512 байт / 512 байт
-Размер I/O (минимальный/оптимальный): 512 байт / 512 байт
-Тип метки диска: gpt
-Идентификатор диска: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+Disk /dev/nvme0n1: 1,86 TiB, 2048408248320 bytes, 4000797360 sectors
+Disk model: ADATA LEGEND 700                        
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 
-Устр-во            начало      Конец    Секторы Размер Тип
-/dev/nvme0n1p1       2048     206847     204800   100M EFI                                                                       #раздел EFI
-/dev/nvme0n1p2     206848     239615      32768    16M Зарезервированный раздел Microsoft
-/dev/nvme0n1p3     239616  523294719  523055104 249,4G Microsoft basic data                                    #раздел системы Windows
-/dev/nvme0n1p4  523294720 1201180671  677885952 323,2G Microsoft basic data                                #раздел данных Windows
-/dev/nvme0n1p5 1201180672 2593820671 1392640000 664,1G Файловая система Linux
-/dev/nvme0n1p6 2593820672 4000796671 1406976000 670,9G Файловая система Linux                    #раздел данных Linux</code></pre>
+Device              Start        End    Sectors   Size Type
+/dev/nvme0n1p1       2048     206847     204800   100M EFI System				#EFI partition
+/dev/nvme0n1p2     206848     239615      32768    16M Microsoft reserved
+/dev/nvme0n1p3     239616  523294719  523055104 249,4G Microsoft basic data		#system partition Windows
+/dev/nvme0n1p4  523294720 1201180671  677885952 323,2G Microsoft basic data		#data partition Windows
+/dev/nvme0n1p5 1201180672 2593820671 1392640000 664,1G Linux filesystem
+/dev/nvme0n1p6 2593820672 4000796671 1406976000 670,9G Linux filesystem			#data partition Linux</code></pre>
 </div>
-<p>Редактируем файл /etc/fstab:</p>
+<p>Edit the /etc/fstab file:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> nano /etc/fstab</code>
 </div>
-<p>В моем случае содержимое файла следующее:</p>
+<p>In my case the file contents are as follows:</p>
 <div class="file"><details><summary><a href="./files/fstab">/etc/fstab</a><br></summary><pre><code># / was on /dev/nvme0n1p5 during installation
 /dev/nvme0n1p5  /               ext3    noatime                 0 1
 # /boot/efi was on /dev/nvme0n1p1 during installation
@@ -537,12 +511,12 @@ Disk model: ADATA LEGEND 700
 proc            /proc           proc    defaults                0 0
 shm             /dev/shm        tmpfs   nodev,nosuid,noexec     0 0</code></pre>
 </details></div>
-<p>Сохраняем и выходим (Ctrl+O Enter Ctrl+X).</p>
-<p>Устанавливаем имя компьютера(хоста).</p>
+<p>Save and exit (Ctrl+O Enter Ctrl+X).</p>
+<p>We set the computer (host) name.</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> echo gentoo &gt; /etc/hostname</code>
 </div>
-<p>Далее исправляем файл hosts:</p>
+<p>Next, we correct the hosts file:</p>
 <div class="black_bg">
 <details><summary><code><span class="red_root">root #</span> nano /etc/hosts<br><br></code></summary><pre><code># /etc/hosts: Local Host Database
 #
@@ -583,24 +557,23 @@ shm             /dev/shm        tmpfs   nodev,nosuid,noexec     0 0</code></pre>
 #</code></pre>
 </details>
 </div>
-<p>Сохраняем и выходим (Ctrl+O Enter Ctrl+X).</p>
-<p>Устанавливаем пароль пользователя root.</p>
+<p>Save and exit (Ctrl+O Enter Ctrl+X).</p>
+<p>Setting a password for the root user.</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> passwd</code>
 </div>
-<p>После перезагрузки будет создан аккаунт пользователя для обычной работы.
-    Устанавливаем дополнительные пакеты для русских консольных шрифтов, работы сети.</p>
+<p>After rebooting, a user account will be created for usual works. We'll install additional packages for Russian console fonts and networking.</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> emerge -av terminus-font networkmanager iw wpa_supplicant ntfs3g e2fsprogs bash-completion</code>
 </div>
-<p>После окончания установки редактируем настройки загрузочных сервисов.</p>
+<p>After installation is complete, edit the boot service settings.</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> nano /etc/rc.conf
 <span class="red_root">root #</span> nano /etc/conf.d/hwclock
 <span class="red_root">root #</span> nano /etc/conf.d/keymaps
 <span class="red_root">root #</span> nano /etc/conf.d/consolefont</code></pre>
 </div>
-<p>Мое содержимое файлов:</p>
+<p>My file contents:</p>
 <div class="file"><details><summary><a href="./files/rc.conf">/etc/rc.conf</a></summary><br>
     <pre><code># Global OpenRC configuration settings
 
@@ -997,7 +970,7 @@ consolefont=&quot;ter-v18n&quot;
 #unicodemap=&quot;iso01&quot;</code></pre>
 </details></div>
 
-<p>Далее необходимо отметить сервисы которые должны запускаться при загрузке.</p>
+<p>Next, you need to mark the services that should start at boot.</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> rc-config add consolefont
 <span class="red_root">root #</span> rc-config add dbus boot
@@ -1008,17 +981,17 @@ consolefont=&quot;ter-v18n&quot;
 <span class="red_root">root #</span> rc-config add termencoding boot</code></pre>
 </div>
 
-<h2>Установка загрузчика ОС.</h2>
+<h2>Installing the OS bootloader.</h2>
 
-<p>В качестве программы загрузки используем grub, установленный нами ранее.</p>
+<p>We use grub, which we installed earlier, as the boot program.</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> grub-mkconfig -o /boot/grub/grub.cfg
 <span class="red_root">root #</span> grub-install --efi-directory=/boot/efi</code></pre>
 </div>
 
-<h2>Завершение установки — перезагрузка.</h2>
+<h2>Installation completes with a reboot.</h2>
 
-<p>Для завершения установки выходим из chroot и отмонтируем смонтированные командой arch-chroot разделы.</p>
+<p>To complete the installation, exit chroot and unmount the partitions mounted using the arch-chroot command.</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> exit
 livecd # cd /
@@ -1026,17 +999,16 @@ livecd # umount -l /mnt/gentoo/dev{/shm,/pts,}
 livecd # umount -R /mnt/gentoo
 livecd # reboot</code></pre>
 </div>
-<h2>Настройка системы.</h2>
+<h2>System setup.</h2>
 
-<p>После перезагрузки мы оказываемся в терминальной сессии. Заходим под пользователем root введя пароль который мы
-    вводили при установке. Для работы в системе нам необходимо создать аккаунт обычного пользователя.</p>
+<p>After rebooting, we find ourselves in a terminal session. Log in as root, using the password we entered during installation. To routine access the system, we need to create a regular user account.</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> useradd -m -G users,wheel,audio,disk,lp,floppy,cdrom,dialout,tape,video,render,usb -s /bin/bash user
 <span class="red_root">root #</span> passwd user
 Password: (Enter the password for user)
 Re-enter password: (Re-enter the password to verify)</code></pre>
 </div>
-<p>Выбираем язык системы:</p>
+<p>Select the system language:</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> eselect locale list
 Available targets for the LANG variable:
@@ -1047,12 +1019,11 @@ Available targets for the LANG variable:
   [ ]   (free form)
 <span class="red_root">root #</span> eselect locale set 4</code></pre>
 </div>
-<p>Перегружаем настройки:</p>
+<p>Reloading the settings:</p>
 <div class="black_bg">
 <code><span class="red_root">root #</span> env-update &amp;&amp; source /etc/profile</code>
 </div>
-<p>Настройку сети выполняем из терминала при помощи программы nmtui. Теперь поставим дополнительный модуль который не
-    даст отключаться тачпаду при работе.</p>
+<p>We configure the network from the terminal using nmtui. Now we'll install an additional kernel module that will prevent the touchpad from disconnecting while in use.</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> cd /root
 <span class="red_root">root #</span> wget -O hotfix-kvadra-touchpad-master.zip https://codeload.github.com/alexpevzner/hotfix-kvadra-touchpad/zip/refs/heads/master
@@ -1061,35 +1032,28 @@ Available targets for the LANG variable:
 <span class="red_root">root #</span> make all
 <span class="red_root">root #</span> make install</code></pre>
 </div>
-<p>Далее необходимо поставить минимум пакетов для комфортной работы: терминальный файл менеджер (mc), систему аудио
-    (alsa-utils и pipewire), систему Bluetooth (bluez), 3Д графику (mesa), драйвера графики (xorg-drivers и
-    xorg-server), оконную графическую систему (sddm, plasma-meta, kde-apps).</p>
+<p>Next, you need to install a minimum of packages for comfortable work: terminal file manager (mc), audio system (alsa-utils and pipewire), Bluetooth system (bluez), 3D graphics (mesa), graphics drivers (xorg-drivers and xorg-server), window graphics system (sddm, plasma-meta, kde-apps).</p>
 <div class="black_bg">
 <pre><code><span class="red_root">root #</span> USE=&quot;ncurses unicode -test&quot; emerge -av app-misc/mc alsa-utils pipewire bluez
 <span class="red_root">root #</span> USE=&quot;xorg -test&quot; emerge -av mesa xorg-drivers xorg-server
 <span class="red_root">root #</span> USE=&quot;sddm -test&quot; emerge -av sddm plasma-meta kdecore-meta
 <span class="red_root">root #</span> rc-config add display-manager</code></pre>
 </div>
-<p>Перезагружаемся Ctrl+Alt+Del. Можно сказать, что необходимый минимум стоит. Далее устанавливаем те программы, что
-    нужны Вам. Информацию по установке, настройке и работе в системе можно найти в интернете:
-    <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64">Руководство по системе Gentoo Linux (English)</a> , <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/ru">Руководство по системе Gentoo Linux (перевод на русский язык)</a> ,
-    <a href="https://wiki.gentoo.org/wiki/Main_Page">Gentoo Wiki</a> , <a href="https://forums.gentoo.org/">Форум пользователей Gentoo Linux (english)</a> , <a href="https://www.gentoo.ru/">Русскоязычное сообщество Gentoo linux</a> ,
-    <a href="https://www.gentoo.ru/forum">Русскоязычный форум пользователей Gentoo Linux</a>.</p>
+<p>Reboot with Ctrl+Alt+Del. This should be the bare minimum. Next, install the programs you need. Information on installation, configuration, and operating the system can be found online:
+    <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64">Gentoo Linux System Guide (English)</a> , <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/ru">Gentoo Linux System Guide (Russian translation)</a> ,
+    <a href="https://wiki.gentoo.org/wiki/Main_Page">Gentoo Wiki</a> , <a href="https://forums.gentoo.org/">Gentoo Linux User Forum (English)</a> , <a href="https://www.gentoo.ru/">Russian-Speaking Gentoo Linux Community</a> ,
+    <a href="https://www.gentoo.ru/forum">Russian-Speaking Gentoo Linux User Forum</a>.</p>
 
-<h2>Проблемы в работе.</h2>
+<h2>Troubles during working in Gentoo Linux.</h2>
 
-<p>В логах часто вылезают строки:</p>
+<p>The following lines often appear in the logs:</p>
 <div class="black_bg">
 <pre><code>ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PC00.LPCB.HEC.TSR1], AE_NOT_FOUND (20250404/psargs-332)
 ACPI Error: Aborting method \_SB.PC00.LPCB.H_EC.SEN1._TMP due to previous error (AE_NOT_FOUND) (20250404/psparse-529)</code></pre>
 </div>
-<p>Насколько я понял из поисков в Интернете причина в прошивке BIOS: таблица ACPI не обрабатывает данные символы. Работе
-    это особо не мешает, но поправится только после выхода новой прошивки BIOS, а я не уверен, что DNS будет обновлять
-    прошивку.</p>
+<p>From what I've gathered from searching online, the problem lies in the BIOS firmware: the ACPI table doesn't handle these characters. This doesn't significantly interfere with operation, but it will only be fixed with the release of a new BIOS firmware, and I'm not sure that DNS will update the firmware.</p>
 
-<p>Без установки патча hotfix-kvadra-touchpad-master тачпад отключается после недолгой работы. В ядро внесен коммит для
-    устранения данной проблемы, но пока его не приняли пользуемся патчем. Проблема связана с обработкой IRQ прерывания
-    27.</p>
+<p>Without installing the hotfix-kvadra-touchpad-master patch, the touchpad disconnects after a short period of use. A kernel commit to fix this issue has been made, but we're using the patch until it's accepted. The issue is related to the handling of IRQ interrupt 27.</p>
 <div class="black_bg">
 <pre><code>irq 27: nobody cared (try booting with the &quot;irqpoll&quot; option)
  CPU: 5 UID: 0 PID: 0 Comm: swapper/5 Not tainted 6.17.7-max #1 PREEMPT(voluntary) 
@@ -1126,18 +1090,14 @@ ACPI Error: Aborting method \_SB.PC00.LPCB.H_EC.SEN1._TMP due to previous error 
  Disabling IRQ #27
 </code></pre>
 </div>
-<h2>ИТОГИ.</h2>
+<h2>RESULTS.</h2>
 
-<p>В настоящее время система занимает 133,4 Гб, но из них 82 Гб занимает SDK Android. Даже с изначальным диском 256 Гб
-    установка была бы возможна. В дополнение ноутбук имеет свободный слот под SSD SATA диск, что позволяет очень легко
-    добавить пространство для сохранения данных. Особо отметим наличие свободного слота под оперативную память что
-    позволяет также легко нарастить характеристики ноутбука. За месяц использования особых проблем не было.</p>
-<p>Единственный момент, что при ресурсоемких задачах нагрев процессора около 94 град. Поэтому я начал включать профили
-    энергосбережения чтоб уменьшить нагрев. Однако для ресурсоемких целей может нужен более подходящий ноутбук.</p>
+<p>The system currently occupies 133.4 GB of storage, 82 GB of which is taken up by the Android SDK. Installation would have been possible even with the original 256 GB drive. Additionally, the laptop has a free slot for a SATA SSD, making it easy to add storage space. Of particular note is the free RAM slot, which also allows for easy upgrades. We've had no significant issues in the past month of use.</p>
+<p>The only issue is that the processor heats up to around 94 degrees Celsius during resource-intensive tasks. So I started enabling power-saving profiles to reduce heat. However, for resource-intensive tasks, you might need a more suitable laptop.</p>
 
-<h2>ПОЛЕЗНЫЕ СОВЕТЫ.</h2>
-<h3>Совет — программы.</h3>
-<p>Для ориентировки, что можно поставить на систему выкладываю содержимое моего файла /var/lib/portage/world:</p>
+<h2>USEFUL TIPS.</h2>
+<h3>Tip: programs.</h3>
+<p>To give you an idea of ​​what you can install on your system, I'm posting the contents of my /var/lib/portage/world file:</p>
 <div class="file"><details><summary><a href="./files/world">/var/lib/portage/world</a></summary><br><br><pre><code>app-admin/syslog-ng
 app-admin/testdisk
 app-antivirus/clamav
@@ -1360,35 +1320,25 @@ x11-misc/sddm
 x11-wm/fluxbox
 x11-wm/icewm</code></pre>
 </details></div>
-<p>Может что-то из этого списка даст Вам идею, что можно ставить на Gentoo, правда часть из этого установлена из
-    сторонних репозиториев. Информация по работе со сторонними репозиториями —
-    <a href="https://wiki.gentoo.org/wiki/Eselect/Repository">https://wiki.gentoo.org/wiki/Eselect/Repository</a>. Поиск пакетов по сторонним репозиториям —
+<p>Perhaps some of this list will give you an idea of ​​what you can install on Gentoo, although some of it is installed from third-party repositories. Information on working with third-party repositories can be found at 
+    <a href="https://wiki.gentoo.org/wiki/Eselect/Repository">https://wiki.gentoo.org/wiki/Eselect/Repository</a>. Search for packages in third-party repositories at
     <a href="http://gpo.zugaina.org/">http://gpo.zugaina.org/</a></p>
 
-<h3>Совет — работа с emerge из командной строки.</h3>
+<h3>Tip: Working with emerge from the command line.</h3>
 
-<p>В режиме терминала, в отличии от графического режима, недоступна прокрутка экрана. При установке программ очень часто
-    список устанавливаемых пакетов очень длинный и чтобы просмотреть его весь (просмотреть флаги USE которые можно
-    добавить или удалить) используем команду emerge следующим образом:</p>
+<p>Unlike graphical mode, scrolling is not available in terminal mode. When installing programs, the list of packages to be installed is often very long. To view it all (and see the USE flags that can be added or removed), use the emerge command as follows:</p>
 <div class="black_bg">
-<code><span class="red_root">root #</span> USE=&quot;флаг_для_установки_1 флаг_для_установки_2 .... -флаг_для отказа_1 -флаг_для отказа_2 ...&quot; emerge -pv пакет1 пакет2 | less</code>
+<code><span class="red_root">root #</span> USE=&quot;flag_to_install_1 flag_to_install_2 .... -flag_to_rejection_1 -flag_to_rejection_2 ...&quot; emerge -pv package_1 package_2 | less</code>
 </div>
-<p>После просмотра выход нажатием клавиши Q. Потом нажимаем клавишу вверх, исправляем команду (добавляем или удаляем
-    флаги или пакеты) и опять просматриваем вывод. Когда получили необходимый результат — удаляем с конца команды | less
-    и удаляем флаг p запуска emerge. То есть будет как то так:</p>
+<p>After viewing the output, press Q. Then press the up key, edit the command (add or remove flags or packages), and view the output again. When you've reached the desired result, remove the | less from the end of the command and remove the p flag from the emerge command. So, it should look something like this:</p>
 <div class="black_bg">
-<code><span class="red_root">root #</span> USE=&quot;окончательный_список_флагов_разделенный_пробелами&quot; emerge -v пакеты</code>
+<code><span class="red_root">root #</span> USE=&quot;final_list_of_flags_divided_by_spaces&quot; emerge -v packages</code>
 </div>
-<p>Также возможно работать в нескольких терминалах одновременно. Переключение между терминалами клавишами
-    Ctrl+Alt+F1....Fn, где n — номер терминала.</p>
+<p>It is also possible to work in multiple terminals simultaneously. Switch between terminals using the keys Ctrl+Alt+F1....Fn, where n is the terminal number.</p>
 
-<h3>Совет — проблемы при сборке пакетов.</h3>
+<h3>Tip: problems when assembling packages.</h3>
 
-<p>Иногда при сборке пакетов из тестовых версий 9999 и при сборке libreoffice установка прерывается с ошибкой, тогда
-    помогает добавление строки FEATURES=&quot;-userpriv&quot; перед командой emerge. Также иногда при ошибках сборки
-    помогает выбор другой версии приложения. Наличие других версий можно просмотреть командой `equery m пакет` из пакета
-    gentoolkit. Если выбираете версию у которой стоит Keywords ~amd64, то перед командой emerge добавляем
-    ACCEPT_KEYWORDS=&quot;~amd64&quot;.</p>
+<p>Sometimes, when building packages from 9999 test versions or when building libreoffice, the installation fails with an error. Adding the line FEATURES=&quot;-userpriv&quot; before the emerge command helps. Selecting a different version of the application also sometimes helps with build errors. You can check for other versions using the `equery m package` command from the gentoolkit package. If you select a version with Keywords ~amd64, add ACCEPT_KEYWORDS=&quot;~amd64&quot; before the emerge command.</p>
 	<footer class="down">
 		<p>
 			<a href="mailto:maxborshevnikov@mail.ru">© Maxim Borshevnikov, 2025</a></p>

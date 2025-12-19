@@ -9,6 +9,7 @@ border: 1px solid gray;
 border-radius: 4px;}
 span.red_root {color:red;}
 span.pink {color: pink;}
+span.right {}
 .black_bg {background-color:#3d3846;
 			color:#f6f5f4;
 			padding: 5px;
@@ -18,7 +19,12 @@ img.wide {width: 100%;
 			max-width: 100%;
 			height: auto;
 			display: block;}
-
+footer.down {background-color: #3584e4;
+color: #ffffff;}
+header { font-size: xx-large;
+	background-color: #3584e4;
+ display: flex;
+  justify-content: space-between;}
 
 .code-scroll {
     white-space: pre;      /* Preserves whitespace and prevents lines from wrapping */
