@@ -1,1 +1,1 @@
-Sitemap: https://maxborshevnikov.github.io/sitemap.txt
+Sitemap: https://maxborshevnikov.github.io/sitemap.xml
