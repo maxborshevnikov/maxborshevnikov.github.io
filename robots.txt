@@ -1,1 +1,5 @@
+User-agent: *
+Allow: https://maxborshevnikov.github.io/gentoo_install_dexp_atlas.html
+Allow: https://maxborshevnikov.github.io/gentoo_install_dexp_atlas_en.html
+Allow: https://maxborshevnikov.github.io/privacyPicRes.html
 Sitemap: https://maxborshevnikov.github.io/sitemap.xml
